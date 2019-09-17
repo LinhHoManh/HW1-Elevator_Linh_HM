@@ -2,7 +2,6 @@
 
 # Elevator
 
-## To get a C, you need to:
 ### Gif image of Elevator in Raider Park, TTU campus
 - [x] Find an elevator in the campus
 <p align="center">
@@ -18,7 +17,7 @@
     + Floor buttons align horizontally => instead of horizontal direction, it should be vertical
     + No estimated time of arrival to the desire floor (optional). => if there is a feature displaying estimated time of arrival, there should be an electronic board
 
-## To get a B, you need to:
+## Issue number 2
 - [x] Think about the common things that you use an elevator. List your most common uses and other more rare uses. Does the interface make doing those common things easier?
     + Common things: Elevator in TTU, for example in Computer Science building, Raider Park and other places, the increment of floor is always horizontal. 
     + Emergency buttons (Call operator, fire alarm): used in very rare case, and need to be marked better
