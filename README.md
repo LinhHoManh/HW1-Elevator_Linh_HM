@@ -6,8 +6,8 @@
 ### Gif image of Elevator in Raider Park, TTU campus
 
 - [x] Take photos of the control interface
-<img src = "https://github.com/LinhHoManh/HW1-Elevator_Linh_HM/blob/master/RP1.jpeg">
 <img src = "https://github.com/LinhHoManh/HW1-Elevator_Linh_HM/blob/master/RP2.jpeg">
+<img src = "https://github.com/LinhHoManh/HW1-Elevator_Linh_HM/blob/master/RP1.jpeg">
 <img src = "https://github.com/LinhHoManh/HW1-Elevator_Linh_HM/blob/master/RP3.jpeg">
 - [x] Find an elevator in the campus
 <p align="center">
