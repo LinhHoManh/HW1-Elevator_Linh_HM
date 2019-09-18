@@ -4,6 +4,11 @@
  [Demo link]https://linhhomanh.github.io/HW1-Elevator_Linh_HM/Elevator.html
 
 ### Gif image of Elevator in Raider Park, TTU campus
+
+- [x] Take photos of the control interface
+https://github.com/LinhHoManh/HW1-Elevator_Linh_HM/blob/master/RP1.jpeg
+https://github.com/LinhHoManh/HW1-Elevator_Linh_HM/blob/master/RP2.jpeg
+https://github.com/LinhHoManh/HW1-Elevator_Linh_HM/blob/master/RP3.jpeg
 - [x] Find an elevator in the campus
 <p align="center">
 <img src="https://github.com/LinhHoManh/HW1-Elevator_Linh_HM/blob/master/Linh_Raider-Park.gif">
