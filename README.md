@@ -35,4 +35,14 @@
 - [x] Suggest the improvements to make on the control interface. Sketch your solution. And justify your design decisions.
     + The problem is feedback. I suggest to improve the feedback to users such as: notify users whether the door is closing or opening; notify users whether a desired floor is reached; time estimation for each floor
 
+- [x] Design and implement interactive features (see demo) link
+  + Buttons assigned the floors are placed vertically
+  + Feed back to elevator users by changing the color. Green for the floors, 
+- [x] Design and implement user feedback (see demo) link
+
+
+## Implementation Design
+
+ + Web editor: https://editor.p5js.org/ (P5 is developed in JavaScript environment, having the corresponding libraries to ControlP5 which is developed in Java and no longer support to have a render in html)
+ 
 
