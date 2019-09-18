@@ -3,7 +3,7 @@
 # Elevator
  [Demo link]https://linhhomanh.github.io/HW1-Elevator_Linh_HM/Elevator.html
 
-### Gif image of Elevator in Raider Park, TTU campus
+### Gif image of Elevator in Raider Park, TTU campus (Benchmark A)
 
 - [x] Take photos of the control interface
 <img src = "https://github.com/LinhHoManh/HW1-Elevator_Linh_HM/blob/master/RP2.jpeg">
@@ -23,7 +23,7 @@
     + Floor buttons align horizontally => instead of horizontal direction, it should be vertical
     + No estimated time of arrival to the desire floor (optional). => if there is a feature displaying estimated time of arrival, there should be an electronic board
 
-## Issue number 2
+## (Benchmark B)
 - [x] Think about the common things that you use an elevator. List your most common uses and other more rare uses. Does the interface make doing those common things easier?
     + Common things: Elevator in TTU, for example in Computer Science building, Raider Park and other places, the increment of floor is always horizontal. 
     + Emergency buttons (Call operator, fire alarm): used in very rare case, and need to be marked better
@@ -34,14 +34,14 @@
     + There is no feedback to user when elevator arrives at a floor. Sometimes door opens and people just randomly walk out
 - [x] Suggest the improvements to make on the control interface. Sketch your solution. And justify your design decisions.
     + The problem is feedback. I suggest to improve the feedback to users such as: notify users whether the door is closing or opening; notify users whether a desired floor is reached; time estimation for each floor
-
+## (Benchmark A)
 - [x] Design and implement interactive features (see demo) link
   + Buttons assigned the floors are placed vertically
   + Feed back to elevator users by changing the color. Green for the floors, 
 - [x] Design and implement user feedback (see demo) link
 
 
-## Implementation Design
+## Reference 
 
  + Web editor: https://editor.p5js.org/ (P5 is developed in JavaScript environment, having the corresponding libraries to ControlP5 which is developed in Java and no longer support to have a render in html)
  
