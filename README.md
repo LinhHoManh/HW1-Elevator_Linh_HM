@@ -29,23 +29,4 @@
 - [x] Suggest the improvements to make on the control interface. Sketch your solution. And justify your design decisions.
     + The problem is feedback. I suggest to improve the feedback to users such as: notify users whether the door is closing or opening; notify users whether a desired floor is reached; time estimation for each floor
 
-## Now, imagine that you can have a touch screen on the elevator. To get a A, you need to:
-- [x] Come with your design for the touch screen? What is the screen size that you want?
-   + Vertical touch screen (visual mapping with the building in terms of height) with screensize 30x50 cm (below)
-    
-//<p align="center">
-//<img src="https://github.com/Alex-Nguyen/Elevator/blob/master/controlPanel.png" width="200px">
-//</p>
 
-- [x] Design and implement interactive features (see demo) link
-  
-
-
-## Implementation Design
-
-- Framework for Virtual Reality using A-Frame (https://aframe.io/)
-- Room model : https://jujunjun110.github.io/aframe-crawling-cursor/basic/
-- Elevator model: Customize the room model with Blender3D software (https://www.blender.org/)
-- User interface design: Microsoft Power Point
-- Convert User Interface Design to A-Frame component
-- Interaction: fuse and gaze
