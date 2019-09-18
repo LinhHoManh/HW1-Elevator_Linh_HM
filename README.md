@@ -1,6 +1,7 @@
 # HW1-Elevator_Linh_HM
 
 # Elevator
+https://linhhomanh.github.io/HW1-Elevator_Linh_HM/Elevator.html
 
 ### Gif image of Elevator in Raider Park, TTU campus
 - [x] Find an elevator in the campus
