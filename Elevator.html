@@ -1,0 +1,128 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--        <title>Hello Web - Processing.js Test</title>-->
+<!--         <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.0.0/processing.js"></script>-->
+<!--         <script src="http://www.sojamo.de/libraries/controlP5"></script>-->
+<!--     </head>-->
+<!--<body>-->
+<!--     <h1>Elevator test</h1>-->
+<!--     <p>Elevator web-based sketch:</p>-->
+<!--     <canvas data-processing-sources="Elevator.pde"></canvas>-->
+<!--</body>-->
+<!--</html>-->
+
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.js"></script>
+
+</head>
+<body>
+</body>
+<script>
+
+    var button;
+    var colors= [[0,255,0],[0,200,0],[0,160,0],[0,120,0],[255,126,60],[80,80,80],[0,205,252],[0,0,252],[255,0,0]]
+    function setup() {
+        createCanvas(400, 400);
+        background(200);
+        var button3 = createButton('FL 3');
+        button3.position(125, 100);
+        button3.size(50,25)
+        button3.mousePressed(Floor3);
+        button2 = createButton('FL 2');
+        button2.position(125, 140);
+        button2.size(50,25)
+        button2.mousePressed(Floor2);
+        button1 = createButton('FL 1');
+        button1.position(125, 180);
+        button1.size(50,25)
+        button1.mousePressed(Floor1)
+        Base = createButton('Base');
+        Base.position(125, 220);
+        Base.size(50,25)
+        Base.mousePressed(Basement);
+        alarm = createButton('Alarm');
+        alarm.position(225, 100);
+        alarm.size(50,25)
+        alarm.mousePressed(Alarm)
+        phone = createButton('Phone');
+        phone.position(225, 140);
+        phone.size(50,25)
+        phone.mousePressed(Phone);
+        open = createButton('Open');
+        open.position(225, 180);
+        open.size(50,25)
+        open.mousePressed(Open)
+        close = createButton('Close');
+        close.position(225, 220);
+        close.size(50,25)
+        close.mousePressed(Close);
+        emergency = createButton('Emergency');
+        emergency.position(150, 260);
+        emergency.size(100,25)
+        emergency.mousePressed(Emergency)
+
+    }
+
+    function Floor3() {
+        var val = colors[0]
+        var col = color(70, 73, 200);
+        background(val);
+        button3.style('background-color', col);
+    }
+
+    function Floor2() {
+        var val = colors[1]
+        var col = color(70, 73, 200);
+        background(val);
+        button2.style('background-color', col);
+    }
+
+    function Floor1() {
+        var val = colors[2]
+        var col = color(70, 73, 200);
+        background(val);
+        button1.style('background-color', col);
+    }
+    function Basement() {
+        var val = colors[3]
+        var col = color(70, 73, 200);
+        background(val);
+        Base.style('background-color', col);
+    }
+    function Alarm() {
+        var val = colors[4]
+        var col = color(70, 73, 200);
+        background(val);
+        alarm.style('background-color', col);
+    }
+    function Phone() {
+        var val = colors[5]
+        var col = color(70, 73, 200);
+        background(val);
+        phone.style('background-color', col);
+    }
+    function Open() {
+        var val = colors[6]
+        var col = color(70, 73, 200);
+        background(val);
+        open.style('background-color', col);
+    }
+    function Close() {
+        var val = colors[7]
+        var col = color(70, 73, 200);
+        background(val);
+        close.style('background-color', col);
+    }
+    function Emergency() {
+        var val = colors[8]
+        var col = color(70, 73, 200);
+        background(val);
+        emergency.style('background-color', col);
+    }
+
+
+</script>
+</html>
