@@ -1,187 +1,113 @@
-<!--<!DOCTYPE html>-->
-<!--<html>-->
-<!--<head>-->
-<!--        <title>Hello Web - Processing.js Test</title>-->
-<!--         <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.0.0/processing.js"></script>-->
-<!--         <script src="http://www.sojamo.de/libraries/controlP5"></script>-->
-<!--     </head>-->
-<!--<body>-->
-<!--     <h1>Elevator test</h1>-->
-<!--     <p>Elevator web-based sketch:</p>-->
-<!--     <canvas data-processing-sources="Elevator.pde"></canvas>-->
-<!--</body>-->
-<!--</html>-->
-
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/default-passive-events"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+    <title>Report: Homework 1 - Elevator | elevator</title>
 
 
-</head>
-<body>
-</body>
-<script>
-    // let value = 0
-    var button;
-    let value3 =0
-    let value2 =0
-    let value1 =0
-    let valueb =0
+    <h1 id="report-homework-1---elevator">Report: Homework 1 - Elevator</h1>
 
-    var colors= [[0,255,0],[0,200,0],[0,160,0],[0,120,0],[255,126,60],[80,80,80],[0,205,252],[0,0,252],[255,0,0]]
-    function setup() {
-        createCanvas(400, 400);
-        background(200);
-        button3 = createButton('FL 3');
-        button3.style('background-color', color(255, 255, 255))
-        button3.position(125, 100);
-        button3.size(50,25)
-        button3.mousePressed(Floor3);
-        button2 = createButton('FL 2');
-        button2.style('background-color', color(255, 255, 255))
-        button2.position(125, 140);
-        button2.size(50,25)
-        button2.mousePressed(Floor2);
-        button1 = createButton('FL 1');
-        button1.style('background-color', color(255, 255, 255))
-        button1.position(125, 180);
-        button1.size(50,25)
-        button1.mousePressed(Floor1)
-        Base = createButton('Base');
-        Base.style('background-color', color(255, 255, 255))
-        Base.position(125, 220);
-        Base.size(50,25)
-        Base.mousePressed(Basement);
-        alarm = createButton('Alarm');
-        alarm.style('background-color', color(255, 255, 255))
-        alarm.position(225, 100);
-        alarm.size(50,25)
-        alarm.mousePressed(Alarm)
-        phone = createButton('Phone');
-        phone.style('background-color', color(255, 255, 255))
-        phone.position(225, 140);
-        phone.size(50,25)
-        phone.mousePressed(Phone);
-        open = createButton('Open');
-        open.style('background-color', color(255, 255, 255))
-        open.position(225, 180);
-        open.size(50,25)
-        open.mousePressed(Open)
-        close = createButton('Close');
-        close.style('background-color', color(255, 255, 255))
-        close.position(225, 220);
-        close.size(50,25)
-        close.mousePressed(Close);
-        emergency = createButton('Emergency');
-        emergency.style('background-color', color(255, 255, 255))
-        emergency.position(150, 260);
-        emergency.size(100,25)
-        emergency.mousePressed(Emergency)
+    <h3 id="Linh Ho Manh">Linh Ho Manh</h3>
 
-    }
-
-    function Floor3() {
-        console.log("Linh")
-        if (value3 ===0){
-            value3 = 1
-            var val = colors[0]
-            var col = color(70, 73, 200);
-            background(val);
-            button3.style('background-color', col);
-        }
-        else{
-            value3 = 0
-            background(200)
-            button3.style('background-color', color(255, 255, 255));
-        }
-
-    }
+    <h3 id="links">Links</h3>
 
 
-    function Floor2() {
-        console.log("Linh")
-        if (value2 ===0){
-            value2 = 1
-            var val = colors[1]
-            var col = color(70, 73, 200);
-            background(val);
-            button2.style('background-color', col);
-        }
-        else{
-            value2 = 0
-            background(200)
-            button2.style('background-color', color(255, 255, 255));
-        }
+    <p><a href="https://github.com/LinhHoManh/HW1-Elevator_Linh_HM">GitHub repository</a></p>
 
-    }
-
-    function Floor1() {
-        console.log("Linh")
-        if (value1 ===0){
-            value1 = 1
-            var val = colors[1]
-            var col = color(70, 73, 200);
-            background(val);
-            button1.style('background-color', col);
-        }
-        else{
-            value1 = 0
-            background(200)
-            button1.style('background-color', color(255, 255, 255));
-        }
-
-    }
-
-    function Basement() {
-        console.log("Linh")
-        if (valueb ===0){
-            valueb = 1
-            var val = colors[1]
-            var col = color(70, 73, 200);
-            background(val);
-            Base.style('background-color', col);
-        }
-        else{
-            valueb = 0
-            background(200)
-            Base.style('background-color', color(255, 255, 255));
-        }
-
-    }
-
-    function Alarm() {
-        var val = colors[4]
-        var col = color(70, 73, 200);
-        background(val);
-        alarm.style('background-color', col);
-    }
-    function Phone() {
-        var val = colors[5]
-        var col = color(70, 73, 200);
-        background(val);
-        phone.style('background-color', col);
-    }
-    function Open() {
-        var val = colors[6]
-        var col = color(70, 73, 200);
-        background(val);
-        open.style('background-color', col);
-    }
-    function Close() {
-        var val = colors[7]
-        var col = color(70, 73, 200);
-        background(val);
-        close.style('background-color', col);
-    }
-    function Emergency() {
-        var val = colors[8]
-        var col = color(70, 73, 200);
-        background(val);
-        emergency.style('background-color', col);
-    }
+    <p><a href="https://linhhomanh.github.io/HW1-Elevator_Linh_HM/Demo.html">Demo</a></p>
 
 
-</script>
+    <h3 id="part-c">Part C:</h3>
+    <ul>
+        <li>
+            <p>Example: The elevator in the Electrical &amp; Computer Engineering building at Texas Tech</p>
+        </li>
+        <li>
+            <p>The control interface</p>
+        </li>
+    </ul>
+
+    <p><img src = "https://github.com/LinhHoManh/HW1-Elevator_Linh_HM/blob/master/RP2.jpeg"/></p>
+    <p><img src = "https://github.com/LinhHoManh/HW1-Elevator_Linh_HM/blob/master/RP1.jpeg"/></p>
+    <p><img src = "https://github.com/LinhHoManh/HW1-Elevator_Linh_HM/blob/master/RP3.jpeg"/></p>
+
+
+    <ul>
+        <li>Gif image of the control interface in operation.</li>
+    </ul>
+
+    <p><img src="https://github.com/LinhHoManh/HW1-Elevator_Linh_HM/blob/master/Linh_Raider-Park.gif" /></p>
+
+    <ul>
+        <li>Issues with the current design
+            <ul>
+                <li>Floor buttons aligned horizontally</li>
+                <li>Don't know when the door will be closing</li>
+                <li>No estimated time of arrival to the desire floor</li>
+            </ul>
+        </li>
+        <li>Explain why it is bad
+            <ul>
+                <li>Floor buttons align horizontally => instead of horizontal direction, it should be vertical</li>
+                <li>No estimated time of arrival to the desire floor (optional). => if there is a feature displaying estimated time of arrival, there should be an electronic board</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3 id="part-b">Part B:</h3>
+    <ul>
+        <li>Think about the common things that you use an elevator. List your most common uses and other more rare uses. Does the interface make doing those common things easier?
+            <ul>
+                <li>Elevator in TTU, for example in Computer Science building, Raider Park and other places, the increment of floor is always horizontal. </li>
+                <li>Emergency buttons (Call operator, fire alarm): used in very rare case, and need to be marked better</li>
+                <li>The interface makes doing the common things easier when it’s properly designed (most of the cases), and can
+                    help to save time and effort of users.</li>
+            </ul>
+        </li>
+        <li>Think about how the user interacts with the elevator. What is the common sequence of actions?
+            <ul>
+                <li>There should be some feedbacks showing how many times a button (floor) has been pressed)</li>
+            </ul>
+        </li>
+        <li>How does the elevator support the user figure out how to make it work?
+            <ul>
+                <li>There is no feedback to user when elevator arrives at a floor. Sometimes door opens and people just randomly walk out</li>
+            </ul>
+        </li>
+        <li>How does the elevator provide feedback to the user?
+            <ul>
+                <li>I suggest to improve the feedback to users such as: notify users whether the door is closing or opening; notify users whether a desired floor is reached; time estimation for each floor</li>
+
+            </ul>
+
+
+    </ul>
+
+    <h3 id="part-a">Part A</h3>
+    
+
+    <ul>
+        <li>Design and implement in my sketch
+            <ul>
+                <li>Buttons assigned the floors are placed vertically</li>
+                <li>Feed back to elevator users by changing the color. Green for the floors,</li>
+                <li>The users can cancel their wrong options by double-clicking at the floor 3, floor 2, floor 1 and basement</li>
+                <li>Please see the <a href="https://linhhomanh.github.io/HW1-Elevator_Linh_HM/Demo.html">demo</a>,
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+
+    </body>
 </html>
