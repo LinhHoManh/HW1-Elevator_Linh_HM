@@ -1,144 +1,113 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Report: Homework 1 - Elevator | elevator</title>
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+    <title>Report: Homework 1 - Elevator | elevator</title>
 
 
-      <h1 id="report-homework-1---elevator">Report: Homework 1 - Elevator</h1>
+    <h1 id="report-homework-1---elevator">Report: Homework 1 - Elevator</h1>
 
-<h3 id="Linh Ho Manh">Linh Ho Manh</h3>
+    <h3 id="Linh Ho Manh">Linh Ho Manh</h3>
 
-<h3 id="links">Links</h3>
-
-
-<p><a href="https://github.com/LinhHoManh/HW1-Elevator_Linh_HM">GitHub repository</a></p>
-
-<p><a href="https://linhhomanh.github.io/HW1-Elevator_Linh_HM/Demo.html">Demo</a></p>
+    <h3 id="links">Links</h3>
 
 
-<h3 id="part-c">Part C:</h3>
-<ul>
-  <li>
-    <p>Example: The elevator in the Electrical &amp; Computer Engineering building at Texas Tech</p>
-  </li>
-  <li>
-    <p>The control interface</p>
-  </li>
-</ul>
+    <p><a href="https://github.com/LinhHoManh/HW1-Elevator_Linh_HM">GitHub repository</a></p>
 
-<p><img src = "https://github.com/LinhHoManh/HW1-Elevator_Linh_HM/blob/master/RP2.jpeg"/></p>
-<p><img src = "https://github.com/LinhHoManh/HW1-Elevator_Linh_HM/blob/master/RP1.jpeg"/></p>
-<p><img src = "https://github.com/LinhHoManh/HW1-Elevator_Linh_HM/blob/master/RP3.jpeg"/></p>
+    <p><a href="https://linhhomanh.github.io/HW1-Elevator_Linh_HM/Demo.html">Demo</a></p>
 
 
-<ul>
-  <li>Gif image of the control interface in operation.</li>
-</ul>
-
-<p><img src="https://github.com/LinhHoManh/HW1-Elevator_Linh_HM/blob/master/Linh_Raider-Park.gif" /></p>
-
-<ul>
-  <li>Issues with the current design
+    <h3 id="part-c">Part C:</h3>
     <ul>
-      <li>Floor buttons aligned horizontally</li>
-      <li>Don't know when the door will be closing</li>
-      <li>No estimated time of arrival to the desire floor</li>
-    </ul>
-  </li>
-  <li>Explain why it is bad
-    <ul>
-      <li>Floor buttons align horizontally => instead of horizontal direction, it should be vertical</li>
-      <li>No estimated time of arrival to the desire floor (optional). => if there is a feature displaying estimated time of arrival, there should be an electronic board</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="part-b">Part B:</h3>
-<ul>
-  <li>Think about the common things that you use an elevator. List your most common uses and other more rare uses. Does the interface make doing those common things easier?
-    <ul>
-      <li>Elevator in TTU, for example in Computer Science building, Raider Park and other places, the increment of floor is always horizontal. </li>
-      <li>Emergency buttons (Call operator, fire alarm): used in very rare case, and need to be marked better</li>
-      <li>The interface makes doing the common things easier when it’s properly designed (most of the cases), and can 
-  help to save time and effort of users.</li>
-    </ul>
-  </li>
-  <li>Think about how the user interacts with the elevator. What is the common sequence of actions?
-    <ul>
-      <li>There should be some feedbacks showing how many times a button (floor) has been pressed)</li>
-    </ul>
-  </li>
-  <li>How does the elevator support the user figure out how to make it work?
-    <ul>
-      <li>There is no feedback to user when elevator arrives at a floor. Sometimes door opens and people just randomly walk out</li>
-    </ul>
-  </li>
-  <li>How does the elevator provide feedback to the user?
-    <ul>
-      <li>I suggest to improve the feedback to users such as: notify users whether the door is closing or opening; notify users whether a desired floor is reached; time estimation for each floor</li>
-
+        <li>
+            <p>Example: The elevator in the Electrical &amp; Computer Engineering building at Texas Tech</p>
+        </li>
+        <li>
+            <p>The control interface</p>
+        </li>
     </ul>
 
+    <p><img src = "https://github.com/LinhHoManh/HW1-Elevator_Linh_HM/blob/master/RP2.jpeg"/></p>
+    <p><img src = "https://github.com/LinhHoManh/HW1-Elevator_Linh_HM/blob/master/RP1.jpeg"/></p>
+    <p><img src = "https://github.com/LinhHoManh/HW1-Elevator_Linh_HM/blob/master/RP3.jpeg"/></p>
 
-</ul>
 
-<h3 id="part-a">Part A</h3>
-
-<ul>
-  <li>
-    <p>Now, imagine that you can have a touch screen on the elevator</p>
-  </li>
-  <li>Come with your design for the touch screen? What is the screen size that you want?
     <ul>
-      <li>The design for the touch screen: Please see the <a href="https://nnhuyen.github.io/elevator/demo.html">demo</a>, 
-  https://nnhuyen.github.io/elevator/demo.html.</li>
-      <li>Screen size: 24in x 18in for the control panel.</li>
+        <li>Gif image of the control interface in operation.</li>
     </ul>
-  </li>
-  <li>Design and implement interactive features
+
+    <p><img src="https://github.com/LinhHoManh/HW1-Elevator_Linh_HM/blob/master/Linh_Raider-Park.gif" /></p>
+
     <ul>
-      <li>On touch screen, the button is highlighted when chosen. The background is dynamic so user knows it’s a touch 
-  screen.</li>
-      <li>There are indicator for the position of the users inside the building.</li>
-      <li>The emergency light goes off when there is an emergency outside. This button is put on a high position so users
-   in the back can see it. User can use the alarm button to call outside.
-  for help</li>
-      <li>Please see the <a href="https://nnhuyen.github.io/elevator/demo.html">demo</a>, 
-    https://nnhuyen.github.io/elevator/demo.html.</li>
+        <li>Issues with the current design
+            <ul>
+                <li>Floor buttons aligned horizontally</li>
+                <li>Don't know when the door will be closing</li>
+                <li>No estimated time of arrival to the desire floor</li>
+            </ul>
+        </li>
+        <li>Explain why it is bad
+            <ul>
+                <li>Floor buttons align horizontally => instead of horizontal direction, it should be vertical</li>
+                <li>No estimated time of arrival to the desire floor (optional). => if there is a feature displaying estimated time of arrival, there should be an electronic board</li>
+            </ul>
+        </li>
     </ul>
-  </li>
-  <li>Design and implement user feedback
+
+    <h3 id="part-b">Part B:</h3>
     <ul>
-      <li>The indicator point goes up/down for every time the current floor changes.</li>
-      <li>The indicator light shows the direction and the corresponding floor.</li>
-      <li>Please see the <a href="https://nnhuyen.github.io/elevator/demo.html">demo</a>, 
-    https://nnhuyen.github.io/elevator/demo.html.</li>
-    </ul>
-  </li>
-</ul>
+        <li>Think about the common things that you use an elevator. List your most common uses and other more rare uses. Does the interface make doing those common things easier?
+            <ul>
+                <li>Elevator in TTU, for example in Computer Science building, Raider Park and other places, the increment of floor is always horizontal. </li>
+                <li>Emergency buttons (Call operator, fire alarm): used in very rare case, and need to be marked better</li>
+                <li>The interface makes doing the common things easier when it’s properly designed (most of the cases), and can
+                    help to save time and effort of users.</li>
+            </ul>
+        </li>
+        <li>Think about how the user interacts with the elevator. What is the common sequence of actions?
+            <ul>
+                <li>There should be some feedbacks showing how many times a button (floor) has been pressed)</li>
+            </ul>
+        </li>
+        <li>How does the elevator support the user figure out how to make it work?
+            <ul>
+                <li>There is no feedback to user when elevator arrives at a floor. Sometimes door opens and people just randomly walk out</li>
+            </ul>
+        </li>
+        <li>How does the elevator provide feedback to the user?
+            <ul>
+                <li>I suggest to improve the feedback to users such as: notify users whether the door is closing or opening; notify users whether a desired floor is reached; time estimation for each floor</li>
 
-<ul>
-  <li>Design and implement in my sketch
+            </ul>
+
+
+    </ul>
+
+    <h3 id="part-a">Part A</h3>
+    
+
     <ul>
-      <li>Buttons assigned the floors are placed vertically</li>
-      <li>Feed back to elevator users by changing the color. Green for the floors,</li>
-      <li>The users can cancel their wrong options by double-clicking at the floor 3, floor 2, floor 1 and basement</li>
+        <li>Design and implement in my sketch
+            <ul>
+                <li>Buttons assigned the floors are placed vertically</li>
+                <li>Feed back to elevator users by changing the color. Green for the floors,</li>
+                <li>The users can cancel their wrong options by double-clicking at the floor 3, floor 2, floor 1 and basement</li>
+                <li>Please see the <a href="https://linhhomanh.github.io/HW1-Elevator_Linh_HM/Demo.html">demo</a>,
+                </li>
+            </ul>
+        </li>
     </ul>
-  </li>
-</ul>
 
 
 
-      
+
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
-    
-  </body>
+
+    </body>
 </html>
