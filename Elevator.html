@@ -16,50 +16,66 @@
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/default-passive-events"></script>
+
 
 </head>
 <body>
 </body>
 <script>
-
+    // let value = 0
     var button;
+    let value3 =0
+    let value2 =0
+    let value1 =0
+    let valueb =0
+
     var colors= [[0,255,0],[0,200,0],[0,160,0],[0,120,0],[255,126,60],[80,80,80],[0,205,252],[0,0,252],[255,0,0]]
     function setup() {
         createCanvas(400, 400);
         background(200);
         button3 = createButton('FL 3');
+        button3.style('background-color', color(255, 255, 255))
         button3.position(125, 100);
         button3.size(50,25)
         button3.mousePressed(Floor3);
         button2 = createButton('FL 2');
+        button2.style('background-color', color(255, 255, 255))
         button2.position(125, 140);
         button2.size(50,25)
         button2.mousePressed(Floor2);
         button1 = createButton('FL 1');
+        button1.style('background-color', color(255, 255, 255))
         button1.position(125, 180);
         button1.size(50,25)
         button1.mousePressed(Floor1)
         Base = createButton('Base');
+        Base.style('background-color', color(255, 255, 255))
         Base.position(125, 220);
         Base.size(50,25)
         Base.mousePressed(Basement);
         alarm = createButton('Alarm');
+        alarm.style('background-color', color(255, 255, 255))
         alarm.position(225, 100);
         alarm.size(50,25)
         alarm.mousePressed(Alarm)
         phone = createButton('Phone');
+        phone.style('background-color', color(255, 255, 255))
         phone.position(225, 140);
         phone.size(50,25)
         phone.mousePressed(Phone);
         open = createButton('Open');
+        open.style('background-color', color(255, 255, 255))
         open.position(225, 180);
         open.size(50,25)
         open.mousePressed(Open)
         close = createButton('Close');
+        close.style('background-color', color(255, 255, 255))
         close.position(225, 220);
         close.size(50,25)
         close.mousePressed(Close);
         emergency = createButton('Emergency');
+        emergency.style('background-color', color(255, 255, 255))
         emergency.position(150, 260);
         emergency.size(100,25)
         emergency.mousePressed(Emergency)
@@ -67,31 +83,74 @@
     }
 
     function Floor3() {
-        var val = colors[0]
-        var col = color(70, 73, 200);
-        background(val);
-        button3.style('background-color', col);
+        console.log("Linh")
+        if (value3 ===0){
+            value3 = 1
+            var val = colors[0]
+            var col = color(70, 73, 200);
+            background(val);
+            button3.style('background-color', col);
+        }
+        else{
+            value3 = 0
+            background(200)
+            button3.style('background-color', color(255, 255, 255));
+        }
+
     }
 
+
     function Floor2() {
-        var val = colors[1]
-        var col = color(70, 73, 200);
-        background(val);
-        button2.style('background-color', col);
+        console.log("Linh")
+        if (value2 ===0){
+            value2 = 1
+            var val = colors[1]
+            var col = color(70, 73, 200);
+            background(val);
+            button2.style('background-color', col);
+        }
+        else{
+            value2 = 0
+            background(200)
+            button2.style('background-color', color(255, 255, 255));
+        }
+
     }
 
     function Floor1() {
-        var val = colors[2]
-        var col = color(70, 73, 200);
-        background(val);
-        button1.style('background-color', col);
+        console.log("Linh")
+        if (value1 ===0){
+            value1 = 1
+            var val = colors[1]
+            var col = color(70, 73, 200);
+            background(val);
+            button1.style('background-color', col);
+        }
+        else{
+            value1 = 0
+            background(200)
+            button1.style('background-color', color(255, 255, 255));
+        }
+
     }
+
     function Basement() {
-        var val = colors[3]
-        var col = color(70, 73, 200);
-        background(val);
-        Base.style('background-color', col);
+        console.log("Linh")
+        if (valueb ===0){
+            valueb = 1
+            var val = colors[1]
+            var col = color(70, 73, 200);
+            background(val);
+            Base.style('background-color', col);
+        }
+        else{
+            valueb = 0
+            background(200)
+            Base.style('background-color', color(255, 255, 255));
+        }
+
     }
+
     function Alarm() {
         var val = colors[4]
         var col = color(70, 73, 200);
