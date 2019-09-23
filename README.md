@@ -37,7 +37,8 @@
 ## (Benchmark A)
 - [x] Design and implement interactive features (see demo) link
   + Buttons assigned the floors are placed vertically
-  + Feed back to elevator users by changing the color. Green for the floors, 
+  + Feed back to elevator users by changing the color. Green for the floors,
+  + The users can cancel their wrong options by double-clicking at the floor 3, floor 2, floor 1 and basement
 - [x] Design and implement user feedback (see demo) link
 
 
